@@ -1,7 +1,7 @@
 # EXPERIMENT--01-ALP-FOR-8086
-## Name :
-## Roll no :
-## Date of experiment :
+## Name : Kailash V
+## Roll no : 212224240067
+## Date of experiment : 21/07/2026
 
 
 
@@ -75,28 +75,81 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 
 
-## Programs for arithmetic  operations (16 bit)
+## Programs for arithmethic  operations (16 bit)
 
+```
+org 100h
+
+MOV BX,0FFFFH
+MOV AX,0FFFFH
+ADD AX,BX
+MOV [2000H],AX
+
+MOV AX,4444H
+MOV CX,3246H
+SUB AX,CX
+MOV [2002H],AX
+
+MOV AX,4357H
+MOV BX,0999H
+MUL CX
+MOV [2004H],AX
+
+MOV AX,0005H
+MOV BX,5000H
+DIV BX
+MOV [2006H],AX
+
+ret
+
+```
 
 
 ## Output  
 
+<img width="1918" height="1142" alt="Screenshot 2026-07-21 081708" src="https://github.com/user-attachments/assets/435e038f-e276-4a64-9c48-85a733a2f5f2" />
 
 
 
 
-## Programs for logical  operations (16 bit)
+## Programs for logic  operations (16 bit)
+```
+org 100h
 
+MOV BX,1234H
+MOV AX,3333H
+AND AX,BX
+MOV [2000H],AX
+NOT AX
+MOV [2002H],AX
 
+MOV BX,1234H
+MOV AX,3333H
+OR AX,BX
+MOV [2004H],AX
+NOT AX
+MOV [2006H],AX
+
+MOV BX,1234H
+MOV AX,3333H
+XOR AX,BX
+MOV [2008H],AX
+NOT AX
+MOV [2010H],AX
+
+ret
+```
 
 ## Output  
+
+<img width="1917" height="1140" alt="Screenshot 2026-07-21 081533" src="https://github.com/user-attachments/assets/7aba3f63-113f-4669-a781-5ff4505352a8" />
 
 
 
 
 ## Result :
  
-
+The 8086 Assembly Language Programs (ALP) for 16-bit arithmetic operations (Addition, Subtraction, Multiplication, and Division) and logical operations (AND, OR, XOR, NOT, NOR, and NAND) were successfully executed using the EMU8086 emulator. The outputs were verified, and the corresponding results and flag status were observed successfully.
 
 
 
